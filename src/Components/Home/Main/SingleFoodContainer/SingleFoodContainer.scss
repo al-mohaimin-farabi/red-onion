@@ -1,0 +1,89 @@
+.single-food{
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    position: relative;
+
+    &__info{
+        padding-right: 20px;
+
+        & .back-btn{
+            position: absolute;
+            left: 0px;
+            top: 20px;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        &__title{
+            font-size: 65px;
+            font-weight: 500;
+        }
+
+        &__subtitle{
+            color: rgb(107, 107, 107);
+            margin: 30px 0;
+        }
+
+        &__price-quantity{
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        &__price{
+            font-size: 40px;
+            font-weight: 500;
+        }
+
+        &__quantity{
+            margin-left: 50px;
+            border: 1px solid rgb(107, 107, 107);
+            border-radius: 50px;
+
+            & .quantity-control{
+                display: inline-block;
+                padding: 10px 20px;
+                cursor: pointer;
+                background: transparent;
+                border: none;
+
+                &:hover{
+                    color:rgb(255, 0, 76);
+                }
+            }
+
+            & .quantity{
+                display: inline-block;
+                padding: 10px 5px;
+            }
+        }
+
+        & .add-button{
+            cursor: pointer;
+            padding: 15px 35px;
+            border-radius: 50px;
+            border: none;
+            background-color: rgb(255, 0, 76);
+            color: white;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            & .icon{
+                margin-right: 10px;
+                font-size: 25px;
+            }
+        }
+    }
+
+    &__img{
+         & img{
+             width: 100%;
+         }
+    }
+}

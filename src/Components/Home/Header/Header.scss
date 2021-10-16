@@ -1,0 +1,52 @@
+.header{
+
+    &__img{
+        position: relative;
+        left: 0;
+        right: 0;
+    }
+
+    &__content{
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+
+        & h1{
+            font-size: 55px;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+
+        &__search{
+            display: flex;
+            justify-content: center;
+
+            & input{
+                font-family: inherit;
+                font-size: 16px;
+                padding: 15px 30px;
+                background: white;
+                border: none;
+                border-radius: 50px;
+                width: 400px;
+
+                &:focus{
+                    outline: none;
+                }
+            }
+
+            & button{
+                padding: 15px 50px;
+                background-color: rgb(255, 0, 76);
+                font-size: 16px;
+                border: none;
+                border-radius: 50px;
+                color: white;
+                position: relative;
+                left: -50px;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+main{
+    margin-bottom: 50px;
+}
+
+.sub-nav{
+    display: flex;
+    justify-content: center;
+
+    & p{
+        cursor: pointer;
+        margin: 50px;
+        text-decoration: none;
+        display: inline-block;
+        color: black;
+        font-family: inherit;
+        font-weight: 500;
+        border-bottom: 2px solid transparent;
+        transition: .2s;
+
+        &:hover{
+            color: rgb(255, 0, 76);
+            border-bottom: 2px solid rgb(255, 0, 76);
+        }
+
+        &.active{
+            color: rgb(255, 0, 76);
+            border-bottom: 2px solid rgb(255, 0, 76);
+        }
+    }
+}

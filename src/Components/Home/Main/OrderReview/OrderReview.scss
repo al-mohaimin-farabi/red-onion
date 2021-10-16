@@ -1,0 +1,167 @@
+.order-review{
+    padding-top: 50px;
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+
+    & .back-btn{
+        font-size: 20px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        cursor: pointer;
+    }
+
+    & .delivery-details{
+        width: 500px;
+        margin: 0 auto;
+
+        & h2{
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+
+        & form{
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+
+            & input{
+                border: none;
+                padding: 15px 20px;
+                background-color: rgb(241, 238, 238);
+                border-radius: 5px;
+                font-size: 15px;
+
+                &:focus{
+                    outline: none;
+                }
+            }
+
+            & p{
+                margin-bottom: 10px;
+                color: red;
+                font-size: 12px;
+            }
+
+            & button{
+                padding: 12px;
+                border: none;
+                background-color: rgb(255, 0, 76);
+                font-size: 15px;
+                color: white;
+                font-family: inherit;
+                border-radius: 8px;
+                cursor: pointer;
+    
+                &:hover{
+                    background-color: rgb(255, 23, 93);
+                }
+            }
+        }
+    }
+
+    & .place-order{
+        width: 350px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+
+        & .cart-food-container{
+            display: flex;
+            flex-direction: column;
+
+            & .food{
+                display: grid;
+                grid-template-columns: 1fr 1.5fr .5fr;
+                padding: 15px;
+                background-color: rgb(241, 238, 238);
+                border-radius: 10px;
+                margin-bottom: 10px;
+                align-items: center;
+
+                & img{
+                    width: 100%;
+                }
+
+                & .info{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0 5px;
+
+                    & .title{
+                        font-size: 12px;
+                        font-weight: 500;
+                    }
+
+                    & .price{
+                        font-size: 18px;
+                        color: rgb(255, 0, 76);
+                        font-weight: 500;
+                    }
+                }
+
+                & .quantity-container{
+                    display: flex;
+                    align-items: center;
+
+                    & button{
+                        padding: 5px;
+                        border: none;
+                        background-color: transparent;
+                        cursor: pointer;
+                    }
+
+                    & .quantity{
+                        padding: 5px;
+                        background-color: white;
+                        display: inline-block;
+                        width: 30px;
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+
+        & .pricing{
+            margin-top: 30px;
+            font-weight: 500;
+            display: flex;
+            flex-direction: column;
+
+            &__item{
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                margin-bottom: 10px;
+
+                &.total{
+                    font-size: 20px;
+                }
+            }
+
+            & button{
+                padding: 12px;
+                border: none;
+                background-color: rgb(255, 0, 76);
+                font-size: 15px;
+                color: white;
+                font-family: inherit;
+                border-radius: 8px;
+                cursor: pointer;
+    
+                &:hover{
+                    background-color: rgb(255, 23, 93);
+                }
+
+                &:disabled{
+                    cursor: not-allowed;
+                    background-color: rgb(202, 202, 202);
+                    color: white;
+                }
+            }
+        }
+    }
+}

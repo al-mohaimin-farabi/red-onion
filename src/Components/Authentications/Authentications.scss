@@ -1,0 +1,65 @@
+.form-container{
+    background-size: cover;
+
+    &__logo{
+        height: 80px;
+        margin: 30px auto 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__form{
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+
+        & input{
+            width: 100%;
+            padding: 20px 15px;
+            background-color: rgb(241, 238, 238);
+            border: 1px solid transparent;
+            border-radius: 8px;
+            font-size: 15px;
+            font-family: inherit;
+            display: inline-block;
+
+            &:focus{
+                outline: none;
+                border-color: green;
+            }
+        }
+
+        &__error{
+            color: red;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        & button{
+            padding: 20px;
+            border: none;
+            background-color: rgb(255, 0, 76);
+            font-size: 15px;
+            color: white;
+            font-family: inherit;
+            border-radius: 8px;
+            cursor: pointer;
+
+            &:hover{
+                background-color: rgb(255, 23, 93);
+            }
+        }
+    }
+
+    &__toggle{
+        color:rgb(255, 0, 76);
+        text-align: center;
+        margin: 15px 0;
+
+        &:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}

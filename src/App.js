@@ -1,24 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import { useContext, useEffect, useState } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { getAuth, onAuthStateChanged } from '@firebase/auth';
+
+import { Context } from './Context/ContextProvider';
+import Authentications from './Components/Authentications/Authentications';
+import Home from './Components/Home/Home';
+import Navbar from './Components/Navbar/Navbar';
 
 function App() {
+  const [context, setContext] = useContext(Context);
+  const [loading, setLoading] = useState(false);
+
+
+  useEffect(() => {
+    setLoading(true);
+    onAuthStateChanged(getAuth(), user => {
+      if (user?.email) {
+        setContext({
+          ...context,
+          user: user
+        })
+        setLoading(false)
+      }
+      else {
+        setContext({
+          ...context,
+          user: null
+        })
+        setLoading(false)
+      }
+    })
+  }, [])
+
+  if (loading) return null;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <Router>
+      <Navbar />
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <Route exact path='/login' component={Authentications} />
+        <Route exact path='/signup' component={Authentications} />
+      </Switch>
+    </Router>
+
   );
 }
 

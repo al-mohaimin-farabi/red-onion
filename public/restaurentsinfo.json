@@ -1,0 +1,152 @@
+{
+    "breakfast": [
+        {
+            "id": 1,
+            "title": "Bagel and cream cheese",
+            "subtitle": "Served with tomatos and half egg",
+            "price": 6,
+            "priceFraction": 99,
+            "photo": "/Breakfast/breakfast1.png"
+        },
+        {
+            "id": 2,
+            "title": "Breakfast Sandwich",
+            "subtitle": "Served with cucumber and half egg",
+            "price": 9,
+            "priceFraction": 99,
+            "photo": "/Breakfast/breakfast2.png"
+        },
+        {
+            "id": 3,
+            "title": "Baked chicken",
+            "subtitle": "Served with tomato sauce",
+            "price": 10,
+            "priceFraction": 99,
+            "photo": "/Breakfast/breakfast3.png"
+        },
+        {
+            "id": 4,
+            "title": "Eggs Benedict",
+            "subtitle": "Served with breads",
+            "price": 8,
+            "priceFraction": 99,
+            "photo": "/Breakfast/breakfast4.png"
+        },
+        {
+            "id": 5,
+            "title": "Toast Croissant Fried egg",
+            "subtitle": "Served with tomatos and special sauce",
+            "price": 19,
+            "priceFraction": 99,
+            "photo": "/Breakfast/breakfast5.png"
+        },
+        {
+            "id": 6,
+            "title": "Full breakfast fried egg toast brunch",
+            "subtitle": "Served with tomatos and half egg",
+            "price": 3,
+            "priceFraction": 99,
+            "photo": "/Breakfast/breakfast6.png"
+        }
+    ],
+    "lunch": [
+        {
+            "id": 7,
+            "title": "Healthy meal plan",
+            "subtitle": "Popular meal plan",
+            "price": 23,
+            "priceFraction": 99,
+            "photo": "/lunch/lunch1.png"
+        },
+        {
+            "id": 8,
+            "title": "Fried chicken with bento",
+            "subtitle": "Served with french fry and rice",
+            "price": 9,
+            "priceFraction": 99,
+            "photo": "/lunch/lunch2.png"
+        },
+        {
+            "id": 9,
+            "title": "Tarragon-Rubbed-Salmon",
+            "subtitle": "Served with vegetables",
+            "price": 6,
+            "priceFraction": 99,
+            "photo": "/lunch/lunch3.png"
+        },
+        {
+            "id": 10,
+            "title": "Indian lunch",
+            "subtitle": "Served with popular indian foods",
+            "price": 8,
+            "priceFraction": 99,
+            "photo": "/lunch/lunch4.png"
+        },
+        {
+            "id": 11,
+            "title": "Beaf steak",
+            "subtitle": "Served with tomatos and special sauce",
+            "price": 15,
+            "priceFraction": 99,
+            "photo": "/lunch/lunch5.png"
+        },
+        {
+            "id": 12,
+            "title": "Honey Soy Glazed Salmon with Peppers",
+            "subtitle": "Served with tomato sauce",
+            "price": 7,
+            "priceFraction": 99,
+            "photo": "/lunch/lunch6.png"
+        }
+    ],
+    "dinner": [
+        {
+            "id": 13,
+            "title": "Salmon with Grapefruit and Lentil Salad",
+            "subtitle": "Served with vegetables",
+            "price": 9,
+            "priceFraction": 99,
+            "photo": "/Dinner/dinner1.png"
+        },
+        {
+            "id": 14,
+            "title": "Lemony Salmon Piccata",
+            "subtitle": "Served with vegetables",
+            "price": 10,
+            "priceFraction": 99,
+            "photo": "/Dinner/dinner2.png"
+        },
+        {
+            "id": 15,
+            "title": "Pork Tenderlion With Quinoa Pilaf",
+            "subtitle": "Served with breads",
+            "price": 12,
+            "priceFraction": 99,
+            "photo": "/Dinner/dinner3.png"
+        },
+        {
+            "id": 16,
+            "title": "French fries with cheese",
+            "subtitle": "Served with salad",
+            "price": 8,
+            "priceFraction": 99,
+            "photo": "/Dinner/dinner4.png"
+        },
+        {
+            "id": 17,
+            "title": "Garlic Butter Baked Salmon",
+            "subtitle": "Served with different vegetables",
+            "price": 6,
+            "priceFraction": 99,
+            "photo": "/Dinner/dinner5.png"
+        },
+        {
+            "id": 18,
+            "title": "Baked chicken",
+            "subtitle": "Served with special sauce and salad",
+            "price": 6,
+            "priceFraction": 99,
+            "photo": "/Dinner/dinner6.png"
+        }
+    ]
+}
