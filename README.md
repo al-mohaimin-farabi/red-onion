@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/cd45bb74-3291-4c79-bacb-2b96ad3e0a53/deploy-status)](https://app.netlify.com/sites/red-onions/deploys)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
